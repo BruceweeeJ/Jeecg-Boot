@@ -1,0 +1,28 @@
+
+£%squid:RedundantThrowsDeclarationCheck‹"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(üĞ“äşÿÿÿÿ
+fsquid:S44888"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Ãèïûÿÿÿÿ
+esquid:S4488¾"HReplace "@RequestMapping(method = RequestMethod.PUT)" with "@PutMapping"(Ş²•ùùÿÿÿÿ
+bsquid:S4488Š"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ÀŒµì
+fsquid:S1192Ê"IDefine a constant instead of duplicating this literal "userInfo" 3 times.(Œ²Œçşÿÿÿÿ
+csquid:S1192_"LDefine a constant instead of duplicating this literal "ç”¨æˆ·å: " 4 times.(Â·Æ”
+jsquid:S1192Ñ"MDefine a constant instead of duplicating this literal "multi_depart" 3 times.(Ù‡Â‘úÿÿÿÿ
+usquid:S2293:"YReplace the type specification in this constructor call with the diamond operator ("<>").(¼ô¹Öøÿÿÿÿ
+vsquid:S2293Š"YReplace the type specification in this constructor call with the diamond operator ("<>").(¼ô¹Öøÿÿÿÿ
+qsquid:S2293©"YReplace the type specification in this constructor call with the diamond operator ("<>").(çØòÓ
+vsquid:S2293À"YReplace the type specification in this constructor call with the diamond operator ("<>").(¼ô¹Öøÿÿÿÿ
+vsquid:S2293×"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ğœéëúÿÿÿÿ
+vsquid:S2293£"YReplace the type specification in this constructor call with the diamond operator ("<>").(¼ô¹Öøÿÿÿÿ
+qsquid:S2293å"YReplace the type specification in this constructor call with the diamond operator ("<>").(ëó­á
+qsquid:S2293æ"YReplace the type specification in this constructor call with the diamond operator ("<>").(«üÎŒ
+qsquid:S2293ó"YReplace the type specification in this constructor call with the diamond operator ("<>").(ëó­á
+qsquid:S2293ô"YReplace the type specification in this constructor call with the diamond operator ("<>").(«üÎŒ
+vsquid:S2293Œ"YReplace the type specification in this constructor call with the diamond operator ("<>").(¼ô¹Öøÿÿÿÿ
+csquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Õ¯¸…
+Fsquid:S1125…")Remove the literal "false" boolean value.(¨Ú¬°ûÿÿÿÿ
+dsquid:S00112‹"FDefine and throw a dedicated exception instead of using a generic one.(üĞ“äşÿÿÿÿ
+fsquid:UselessImportCheck
+"=Remove this unused import 'org.apache.shiro.subject.Subject'.(ÿ­ëêøÿÿÿÿ
+@squid:S1148’"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148ş"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Vsquid:S1155Ğ">Use isEmpty() to check whether the collection is empty or not.(øîãÜ
+Vsquid:S1155£">Use isEmpty() to check whether the collection is empty or not.(øîãÜ

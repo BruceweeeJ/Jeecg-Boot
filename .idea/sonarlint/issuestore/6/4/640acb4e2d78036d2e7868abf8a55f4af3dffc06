@@ -1,0 +1,8 @@
+
+isquid:S1192Z"MDefine a constant instead of duplicating this literal "multi_depart" 3 times.(Ù‡Â‘úÿÿÿÿ
+usquid:S2293<"YReplace the type specification in this constructor call with the diamond operator ("<>").(¼ô¹Öøÿÿÿÿ
+bsquid:CommentedOutCodeLineg"<This block of commented-out lines of code should be removed.(†€éˆ
+csquid:S00112D"FDefine and throw a dedicated exception instead of using a generic one.(İœƒçúÿÿÿÿ
+csquid:S00112H"FDefine and throw a dedicated exception instead of using a generic one.(¡¾ğëûÿÿÿÿ
+]squid:S00112;"FDefine and throw a dedicated exception instead of using a generic one.(À’>
+Usquid:S1155Y">Use isEmpty() to check whether the collection is empty or not.(øîãÜ

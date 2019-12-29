@@ -1,0 +1,6 @@
+
+usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ô³íçùÿÿÿÿ
+gsquid:CommentedOutCodeLine6"<This block of commented-out lines of code should be removed.(®žûÿÿÿÿÿ
+?squid:S1148B"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+bsquid:S1192"FDefine a constant instead of duplicating this literal "test2" 3 times.(Ë¤„¦ýÿÿÿÿ
+gsquid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(®žûÿÿÿÿÿ

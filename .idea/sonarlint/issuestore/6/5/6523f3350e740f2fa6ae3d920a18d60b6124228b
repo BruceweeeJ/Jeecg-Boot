@@ -1,0 +1,11 @@
+
+dsquid:S44882"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÏÊÃ×ûÿÿÿÿ
+jsquid:S4488P"NReplace "@RequestMapping(method = RequestMethod.DELETE)" with "@DeleteMapping"(Ùê¤Îûÿÿÿÿ
+esquid:S4488d"NReplace "@RequestMapping(method = RequestMethod.DELETE)" with "@DeleteMapping"(÷ÚÊí
+usquid:S22935"YReplace the type specification in this constructor call with the diamond operator ("<>").(µŠäÑüÿÿÿÿ
+psquid:S22937"YReplace the type specification in this constructor call with the diamond operator ("<>").(åþàË
+usquid:S2293R"YReplace the type specification in this constructor call with the diamond operator ("<>").(»ëüÊøÿÿÿÿ
+psquid:S2293f"YReplace the type specification in this constructor call with the diamond operator ("<>").(¢²¥Ì
+Nsquid:S1135="2Complete the task associated to this TODO comment.(’±Žüýÿÿÿÿ
+Isquid:S1135>"2Complete the task associated to this TODO comment.(Ž¨íþ
+Isquid:S1135?"2Complete the task associated to this TODO comment.(ôõ§¦
