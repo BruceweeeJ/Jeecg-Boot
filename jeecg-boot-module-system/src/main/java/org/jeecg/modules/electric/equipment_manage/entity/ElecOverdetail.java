@@ -14,39 +14,36 @@ import org.jeecgframework.poi.excel.annotation.Excel;
 import org.jeecg.common.aspect.annotation.Dict;
 
 /**
- * @Description: ELEC_BATTERYCHARGE
+ * @Description: ELEC_OVERDETAIL
  * @Author: jeecg-boot
  * @Date:   2019-12-30
  * @Version: V1.0
  */
 @Data
-@TableName("elec_batterycharge")
-public class ElecBatterycharge implements Serializable {
+@TableName("elec_overdetail")
+public class ElecOverdetail implements Serializable {
     private static final long serialVersionUID = 1L;
     
 	/**主键*/
 	@TableId(type = IdType.ID_WORKER_STR)
     private java.lang.String id;
-	/**电池ID*/
-	@Excel(name = "电池ID", width = 15)
-    private java.lang.String eqbatid;
-	/**充电日期*/
-	@Excel(name = "充电日期", width = 15, format = "yyyy-MM-dd")
+	/**设备ID*/
+	@Excel(name = "设备ID", width = 15)
+    private java.lang.String eqid;
+	/**检修日期*/
+	@Excel(name = "检修日期", width = 15, format = "yyyy-MM-dd")
 	@JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd")
     @DateTimeFormat(pattern="yyyy-MM-dd")
-    private java.util.Date eqchardate;
-	/**充电时长*/
-	@Excel(name = "充电时长", width = 15)
-    private java.lang.Double eqchartime;
-	/**电池管理员*/
-	@Excel(name = "电池管理员", width = 15)
-    private java.lang.String eqbatadmin;
-	/**电池使用状态*/
-	@Excel(name = "电池使用状态", width = 15)
-    private java.lang.String equesstate;
-	/**电池充电详情*/
-	@Excel(name = "电池充电详情", width = 15)
-    private java.lang.String eqcharge;
+    private java.util.Date eqoverdate;
+	/**设备检修情况*/
+	@Excel(name = "设备检修情况", width = 15)
+    private java.lang.String eqovercondition;
+	/**检修单位*/
+	@Excel(name = "检修单位", width = 15)
+    private java.lang.String eqoverunit;
+	/**检修详细描述*/
+	@Excel(name = "检修详细描述", width = 15)
+    private java.lang.String eqoverdescribe;
 	/**备注*/
 	@Excel(name = "备注", width = 15)
     private java.lang.String eqtext;

@@ -10,7 +10,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 /**
  * @Description: ELEC_BATTERYCHARGE
  * @Author: jeecg-boot
- * @Date:   2019-12-28
+ * @Date:   2019-12-30
  * @Version: V1.0
  */
 @Service

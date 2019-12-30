@@ -16,7 +16,7 @@ import org.jeecg.common.aspect.annotation.Dict;
 /**
  * @Description: ELEC_EQUIPMENT
  * @Author: jeecg-boot
- * @Date:   2019-12-28
+ * @Date:   2019-12-30
  * @Version: V1.0
  */
 @Data

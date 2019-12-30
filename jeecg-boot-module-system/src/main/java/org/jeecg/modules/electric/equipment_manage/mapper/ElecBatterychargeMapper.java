@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 /**
  * @Description: ELEC_BATTERYCHARGE
  * @Author: jeecg-boot
- * @Date:   2019-12-28
+ * @Date:   2019-12-30
  * @Version: V1.0
  */
 public interface ElecBatterychargeMapper extends BaseMapper<ElecBatterycharge> {

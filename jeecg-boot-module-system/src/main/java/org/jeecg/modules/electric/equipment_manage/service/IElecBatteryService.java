@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 /**
  * @Description: ELEC_BATTERY
  * @Author: jeecg-boot
- * @Date:   2019-12-28
+ * @Date:   2019-12-30
  * @Version: V1.0
  */
 public interface IElecBatteryService extends IService<ElecBattery> {

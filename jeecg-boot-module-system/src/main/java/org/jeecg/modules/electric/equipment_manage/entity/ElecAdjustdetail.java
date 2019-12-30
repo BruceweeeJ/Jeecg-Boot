@@ -14,42 +14,42 @@ import org.jeecgframework.poi.excel.annotation.Excel;
 import org.jeecg.common.aspect.annotation.Dict;
 
 /**
- * @Description: ELEC_BATTERYCHARGE
+ * @Description: ELEC_ADJUSTDETAIL
  * @Author: jeecg-boot
  * @Date:   2019-12-30
  * @Version: V1.0
  */
 @Data
-@TableName("elec_batterycharge")
-public class ElecBatterycharge implements Serializable {
+@TableName("elec_adjustdetail")
+public class ElecAdjustdetail implements Serializable {
     private static final long serialVersionUID = 1L;
     
 	/**主键*/
 	@TableId(type = IdType.ID_WORKER_STR)
     private java.lang.String id;
-	/**电池ID*/
-	@Excel(name = "电池ID", width = 15)
-    private java.lang.String eqbatid;
-	/**充电日期*/
-	@Excel(name = "充电日期", width = 15, format = "yyyy-MM-dd")
+	/**设备ID*/
+	@Excel(name = "设备ID", width = 15)
+    private java.lang.String eqid;
+	/**校准日期*/
+	@Excel(name = "校准日期", width = 15, format = "yyyy-MM-dd")
 	@JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd")
     @DateTimeFormat(pattern="yyyy-MM-dd")
-    private java.util.Date eqchardate;
-	/**充电时长*/
-	@Excel(name = "充电时长", width = 15)
-    private java.lang.Double eqchartime;
-	/**电池管理员*/
-	@Excel(name = "电池管理员", width = 15)
-    private java.lang.String eqbatadmin;
-	/**电池使用状态*/
-	@Excel(name = "电池使用状态", width = 15)
-    private java.lang.String equesstate;
-	/**电池充电详情*/
-	@Excel(name = "电池充电详情", width = 15)
-    private java.lang.String eqcharge;
+    private java.util.Date eqadjustdate;
+	/**设备校准情况*/
+	@Excel(name = "设备校准情况", width = 15)
+    private java.lang.String eqadjustcondition;
+	/**校准单位*/
+	@Excel(name = "校准单位", width = 15)
+    private java.lang.String eqadjustunit;
+	/**校准详细描述*/
+	@Excel(name = "校准详细描述", width = 15)
+    private java.lang.String eqadjustdescribe;
 	/**备注*/
 	@Excel(name = "备注", width = 15)
     private java.lang.String eqtext;
+	/**借出标志位*/
+	@Excel(name = "借出标志位", width = 15)
+    private java.lang.String eqflag;
 	/**创建人*/
 	@Excel(name = "创建人", width = 15)
     private java.lang.String createBy;
