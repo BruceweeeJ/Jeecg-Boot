@@ -3,16 +3,22 @@ package org.jeecg.modules.electric.equipment_manage.controller;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 import java.util.stream.Collectors;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import net.bytebuddy.matcher.ElementMatcher;
 import org.jeecg.common.api.vo.Result;
 import org.jeecg.common.system.query.QueryGenerator;
 import org.jeecg.common.util.oConvertUtils;
 import org.jeecg.modules.electric.equipment_manage.entity.ElecEquipment;
+import org.jeecg.modules.electric.equipment_manage.entity.ElecOveradjust;
+import org.jeecg.modules.electric.equipment_manage.entity.ElecUse;
+import org.jeecg.modules.electric.equipment_manage.mapper.ElecEquipmentMapper;
 import org.jeecg.modules.electric.equipment_manage.service.IElecEquipmentService;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -20,6 +26,8 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import lombok.extern.slf4j.Slf4j;
 
+import org.jeecg.modules.electric.equipment_manage.service.IElecOveradjustService;
+import org.jeecg.modules.electric.equipment_manage.service.IElecUseService;
 import org.jeecgframework.poi.excel.ExcelImportUtil;
 import org.jeecgframework.poi.excel.def.NormalExcelConstants;
 import org.jeecgframework.poi.excel.entity.ExportParams;
@@ -45,7 +53,10 @@ import com.alibaba.fastjson.JSON;
 public class ElecEquipmentController extends JeecgController<ElecEquipment, IElecEquipmentService> {
 	@Autowired
 	private IElecEquipmentService elecEquipmentService;
-	
+	@Autowired
+	private IElecOveradjustService elecOveradjustService;
+	@Autowired
+	private IElecUseService elecUseService;
 	/**
 	 * 分页列表查询
 	 *
@@ -65,18 +76,39 @@ public class ElecEquipmentController extends JeecgController<ElecEquipment, IEle
 		IPage<ElecEquipment> pageList = elecEquipmentService.page(page, queryWrapper);
 		return Result.ok(pageList);
 	}
-	
+
 	/**
 	 *   添加
 	 *
 	 * @param elecEquipment
 	 * @return
+	 * 重写
 	 */
 	@PostMapping(value = "/add")
 	public Result<?> add(@RequestBody ElecEquipment elecEquipment) {
+		//设备ID为UUID32位编码
+		String ID = UUID.randomUUID().toString().replaceAll("-","");
+		elecEquipment.setId(ID);
+		elecEquipment.setEqname(ID);
 		elecEquipmentService.save(elecEquipment);
+		//检修表添加
+		ElecOveradjust elecOveradjust = new ElecOveradjust();
+		elecOveradjust.setId(ID);
+		elecOveradjust.setEqid(elecEquipment.getEqcode());
+		elecOveradjustService.save(elecOveradjust);
+		//领用表添加
+		ElecUse elecUse = new ElecUse();
+		elecUse.setId(ID);
+		elecUse.setEqcode(elecEquipment.getEqcode());
+		elecUse.setEqflag("可领用");
+		elecUseService.save(elecUse);
 		return Result.ok("添加成功！");
 	}
+//	@PostMapping(value = "/add")
+//	public Result<?> add(@RequestBody ElecEquipment elecEquipment) {
+//		elecEquipmentService.save(elecEquipment);
+//		return Result.ok("添加成功！");
+//	}
 	
 	/**
 	 *  编辑
@@ -128,6 +160,21 @@ public class ElecEquipmentController extends JeecgController<ElecEquipment, IEle
 		}
 		return Result.ok(elecEquipment);
 	}
+
+	 /**
+	  * 通过id查询
+	  *
+	  * @param id
+	  * @return
+	  */
+	 @GetMapping(value = "/showDetail")
+	 public Result<?> showDetail(@RequestParam(name="id",required=true) String id) {
+		 ElecEquipment elecEquipment = elecEquipmentService.getById(id);
+		 if(elecEquipment==null) {
+			 return Result.error("未找到对应数据");
+		 }
+		 return Result.ok(elecEquipment);
+	 }
 
     /**
     * 导出excel
