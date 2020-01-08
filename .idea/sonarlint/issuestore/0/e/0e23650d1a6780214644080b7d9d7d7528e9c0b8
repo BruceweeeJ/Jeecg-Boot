@@ -1,7 +1,0 @@
-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(òÏêÏûÿÿÿÿ8ö¦ß§ô-
-ksquid:UselessImportCheck";Remove this unused import 'org.jeecg.common.api.vo.Result'.(ù·Ç·ùÿÿÿÿ8ö¦ß§ô-
-V
-squid:S106 "9Replace this use of System.out or System.err by a logger.(ù¸êÂ8ö¦ß§ô-
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ô¾Ð„ýÿÿÿÿ8Åùâ§ô-

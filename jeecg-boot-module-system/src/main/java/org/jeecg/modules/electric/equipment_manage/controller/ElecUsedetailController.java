@@ -65,6 +65,20 @@ public class ElecUsedetailController extends JeecgController<ElecUsedetail, IEle
 		IPage<ElecUsedetail> pageList = elecUsedetailService.page(page, queryWrapper);
 		return Result.ok(pageList);
 	}
+
+	@GetMapping(value = "/lookDetailByEqid")
+	public Result<?> lookDetailByEqid(@RequestParam(name="eqid",required=true) String eqid,
+									  @RequestParam(name="pageNo", defaultValue="1") Integer pageNo,
+									  @RequestParam(name="pageSize", defaultValue="10") Integer pageSize,
+									  HttpServletRequest req) {
+		ElecUsedetail elecUsedetail = new ElecUsedetail();
+		elecUsedetail.setEqid(eqid);
+		QueryWrapper<ElecUsedetail> queryWrapper = QueryGenerator.initQueryWrapper(elecUsedetail, req.getParameterMap());
+		Page<ElecUsedetail> page = new Page<ElecUsedetail>(pageNo, pageSize);
+		IPage<ElecUsedetail> pageList = elecUsedetailService.page(page, queryWrapper);
+		return Result.ok(pageList);
+	}
+
 	
 	/**
 	 *   添加

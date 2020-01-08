@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import org.jeecg.common.api.vo.Result;
 import org.jeecg.common.system.query.QueryGenerator;
 import org.jeecg.common.util.oConvertUtils;
+import org.jeecg.modules.electric.equipment_manage.entity.DTO.ElecOveradjustDTO;
+import org.jeecg.modules.electric.equipment_manage.entity.DTO.ElecUseDTO;
 import org.jeecg.modules.electric.equipment_manage.entity.ElecUse;
 import org.jeecg.modules.electric.equipment_manage.service.IElecUseService;
 
@@ -49,23 +51,42 @@ public class ElecUseController extends JeecgController<ElecUse, IElecUseService>
 	/**
 	 * 分页列表查询
 	 *
-	 * @param elecUse
+	 * @param elecUseDTO
 	 * @param pageNo
 	 * @param pageSize
 	 * @param req
 	 * @return
 	 */
 	@GetMapping(value = "/list")
-	public Result<?> queryPageList(ElecUse elecUse,
+	public Result<?> queryPageList(ElecUseDTO elecUseDTO,
 								   @RequestParam(name="pageNo", defaultValue="1") Integer pageNo,
 								   @RequestParam(name="pageSize", defaultValue="10") Integer pageSize,
 								   HttpServletRequest req) {
-		QueryWrapper<ElecUse> queryWrapper = QueryGenerator.initQueryWrapper(elecUse, req.getParameterMap());
-		Page<ElecUse> page = new Page<ElecUse>(pageNo, pageSize);
-		IPage<ElecUse> pageList = elecUseService.page(page, queryWrapper);
-		return Result.ok(pageList);
+//		QueryWrapper<ElecUse> queryWrapper = QueryGenerator.initQueryWrapper(elecUse, req.getParameterMap());
+//		Page<ElecUse> page = new Page<ElecUse>(pageNo, pageSize);
+//		IPage<ElecUse> pageList = elecUseService.page(page, queryWrapper);
+//		return Result.ok(pageList);
+		Result<Page<ElecUseDTO>> result = new Result<Page<ElecUseDTO>>();
+		Page<ElecUseDTO> pageList = new Page<ElecUseDTO>(pageNo,pageSize);
+		pageList = elecUseService.list(pageList);
+		log.info("查询当前页："+pageList.getCurrent());
+		log.info("查询当前页数量："+pageList.getSize());
+		log.info("查询结果数量："+pageList.getRecords().size());
+		log.info("数据总数："+pageList.getTotal());
+		result.setSuccess(true);
+		result.setCode(200);
+		result.setResult(pageList);
+		return result;
 	}
-	
+
+	 @GetMapping(value = "/lookDetail")
+	 public Result<?> lookDetail(@RequestParam(name="id",required=true)String id) {
+		 ElecUseDTO elecUseDTO = elecUseService.lookDetail(id);
+		 if(elecUseDTO==null) {
+			 return Result.error("未找到对应数据");
+		 }
+		 return Result.ok(elecUseDTO);
+	 }
 	/**
 	 *   添加
 	 *

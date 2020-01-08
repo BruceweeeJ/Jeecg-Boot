@@ -12,7 +12,12 @@ import javax.servlet.http.HttpServletResponse;
 import org.jeecg.common.api.vo.Result;
 import org.jeecg.common.system.query.QueryGenerator;
 import org.jeecg.common.util.oConvertUtils;
+import org.jeecg.modules.electric.equipment_manage.entity.DTO.ElecOveradjustdetailDTO;
+import org.jeecg.modules.electric.equipment_manage.entity.ElecEquipment;
 import org.jeecg.modules.electric.equipment_manage.entity.ElecOveradjust;
+import org.jeecg.modules.electric.equipment_manage.entity.DTO.ElecOveradjustDTO;
+import org.jeecg.modules.electric.equipment_manage.mapper.ElecOveradjustMapper;
+import org.jeecg.modules.electric.equipment_manage.service.IElecEquipmentService;
 import org.jeecg.modules.electric.equipment_manage.service.IElecOveradjustService;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -27,6 +32,7 @@ import org.jeecgframework.poi.excel.entity.ImportParams;
 import org.jeecgframework.poi.excel.view.JeecgEntityExcelView;
 import org.jeecg.common.system.base.controller.JeecgController;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.messaging.handler.annotation.MessageExceptionHandler;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
@@ -45,27 +51,44 @@ import com.alibaba.fastjson.JSON;
 public class ElecOveradjustController extends JeecgController<ElecOveradjust, IElecOveradjustService> {
 	@Autowired
 	private IElecOveradjustService elecOveradjustService;
+	@Autowired
+	private ElecOveradjustMapper elecOveradjustMapper;
+	@Autowired
+	private IElecEquipmentService elecEquipmentService;
 	
 	/**
 	 * 分页列表查询
 	 *
-	 * @param elecOveradjust
+	 * @param elecOveradjustDTO
 	 * @param pageNo
 	 * @param pageSize
 	 * @param req
 	 * @return
 	 */
 	@GetMapping(value = "/list")
-	public Result<?> queryPageList(ElecOveradjust elecOveradjust,
+	public Result<?> queryPageList(ElecOveradjustDTO elecOveradjustDTO,
 								   @RequestParam(name="pageNo", defaultValue="1") Integer pageNo,
 								   @RequestParam(name="pageSize", defaultValue="10") Integer pageSize,
 								   HttpServletRequest req) {
-		QueryWrapper<ElecOveradjust> queryWrapper = QueryGenerator.initQueryWrapper(elecOveradjust, req.getParameterMap());
-		Page<ElecOveradjust> page = new Page<ElecOveradjust>(pageNo, pageSize);
-		IPage<ElecOveradjust> pageList = elecOveradjustService.page(page, queryWrapper);
-		return Result.ok(pageList);
+//		ElecOveradjustDTO elecOveradjustDTO = new ElecOveradjustDTO();
+//		QueryWrapper<ElecOveradjust> queryWrapper = QueryGenerator.initQueryWrapper(elecOveradjust, req.getParameterMap());
+//		Page<ElecOveradjust> page = new Page<ElecOveradjust>(pageNo, pageSize);
+//		IPage<ElecOveradjust> pageList = elecOveradjustService.page(page, queryWrapper);
+//		return Result.ok(pageList);
+		Result<Page<ElecOveradjustDTO>> result = new Result<Page<ElecOveradjustDTO>>();
+		Page<ElecOveradjustDTO> pageList = new Page<ElecOveradjustDTO>(pageNo,pageSize);
+		pageList = elecOveradjustService.list(pageList);
+		log.info("查询当前页："+pageList.getCurrent());
+		log.info("查询当前页数量："+pageList.getSize());
+		log.info("查询结果数量："+pageList.getRecords().size());
+		log.info("数据总数："+pageList.getTotal());
+		result.setSuccess(true);
+		result.setCode(200);
+		result.setResult(pageList);
+		return result;
 	}
-	
+
+
 	/**
 	 *   添加
 	 *
@@ -128,6 +151,38 @@ public class ElecOveradjustController extends JeecgController<ElecOveradjust, IE
 		}
 		return Result.ok(elecOveradjust);
 	}
+
+	@GetMapping(value = "/editOver")
+	public Result<?> editOver(@RequestParam(name="id",required=true)String id) {
+//		id = "dad095e6562a470da1fee61115e37734";
+//		QueryWrapper<ElecEquipment>queryWrapper = new QueryWrapper<>();
+//		queryWrapper.select("eqcode","eqname","eqmodel").eq("id",id);
+//		log.info(String.valueOf(elecEquipmentService.getOne(queryWrapper)));
+		ElecEquipment elecEquipment = elecEquipmentService.getById(id);
+		if(elecEquipment==null) {
+			return Result.error("未找到对应数据");
+		}
+		return Result.ok(elecEquipment);
+	}
+
+	 @GetMapping(value = "/editAdjust")
+	 public Result<?> editAdjust(@RequestParam(name="id",required=true)String id) {
+		 ElecEquipment elecEquipment = elecEquipmentService.getById(id);
+		 if(elecEquipment==null) {
+			 return Result.error("未找到对应数据");
+		 }
+		 return Result.ok(elecEquipment);
+	 }
+
+	 @GetMapping(value = "/lookDetail")
+	 public Result<?> lookDetail(@RequestParam(name="id",required=true)String id) {
+		 ElecOveradjustdetailDTO elecOveradjustdetailDTO = elecOveradjustService.lookDetail(id);
+		 if(elecOveradjustdetailDTO==null) {
+			 return Result.error("未找到对应数据");
+		 }
+		 return Result.ok(elecOveradjustdetailDTO);
+	 }
+
 
     /**
     * 导出excel

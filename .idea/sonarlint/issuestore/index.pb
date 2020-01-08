@@ -27,8 +27,6 @@ Hjeecg-boot-module-system/src/main/java/org/jeecg/JeecgOneToMainUtil.java,1\f\1
 `jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/controller/SysLogController.java,6\5\6523f3350e740f2fa6ae3d920a18d60b6124228b
 è
 _jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/controller/LoginController.java,8\4\8410c091bb7acd8a0292280fe68dcb52b5c165ce
-è
-_jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/controller/JeecgController.java,0\e\0e23650d1a6780214644080b7d9d7d7528e9c0b8
 à
 Xjeecg-boot-module-system/src/main/java/org/jeecg/modules/system/mapper/SysLogMapper.java,3\f\3f9b75bbcbe66d0d6ddde673f89dee662ef6f557
 Ç

@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.jeecg.common.api.vo.Result;
 import org.jeecg.common.system.query.QueryGenerator;
 import org.jeecg.common.util.oConvertUtils;
+import org.jeecg.modules.electric.equipment_manage.entity.DTO.ElecBatteryDTO;
 import org.jeecg.modules.electric.equipment_manage.entity.ElecBattery;
 import org.jeecg.modules.electric.equipment_manage.service.IElecBatteryService;
 
@@ -56,14 +57,25 @@ public class ElecBatteryController extends JeecgController<ElecBattery, IElecBat
 	 * @return
 	 */
 	@GetMapping(value = "/list")
-	public Result<?> queryPageList(ElecBattery elecBattery,
+	public Result<?> queryPageList(ElecBatteryDTO elecBatteryDTO,
 								   @RequestParam(name="pageNo", defaultValue="1") Integer pageNo,
 								   @RequestParam(name="pageSize", defaultValue="10") Integer pageSize,
 								   HttpServletRequest req) {
-		QueryWrapper<ElecBattery> queryWrapper = QueryGenerator.initQueryWrapper(elecBattery, req.getParameterMap());
-		Page<ElecBattery> page = new Page<ElecBattery>(pageNo, pageSize);
-		IPage<ElecBattery> pageList = elecBatteryService.page(page, queryWrapper);
-		return Result.ok(pageList);
+//		QueryWrapper<ElecBattery> queryWrapper = QueryGenerator.initQueryWrapper(elecBattery, req.getParameterMap());
+//		Page<ElecBattery> page = new Page<ElecBattery>(pageNo, pageSize);
+//		IPage<ElecBattery> pageList = elecBatteryService.page(page, queryWrapper);
+//		return Result.ok(pageList);
+		Result<Page<ElecBatteryDTO>> result = new Result<Page<ElecBatteryDTO>>();
+		Page<ElecBatteryDTO> pageList = new Page<ElecBatteryDTO>(pageNo,pageSize);
+		pageList = elecBatteryService.list(pageList);
+		log.info("查询当前页："+pageList.getCurrent());
+		log.info("查询当前页数量："+pageList.getSize());
+		log.info("查询结果数量："+pageList.getRecords().size());
+		log.info("数据总数："+pageList.getTotal());
+		result.setSuccess(true);
+		result.setCode(200);
+		result.setResult(pageList);
+		return result;
 	}
 	
 	/**
