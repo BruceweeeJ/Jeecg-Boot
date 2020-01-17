@@ -12,7 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import org.jeecg.common.api.vo.Result;
 import org.jeecg.common.system.query.QueryGenerator;
 import org.jeecg.common.util.oConvertUtils;
+import org.jeecg.modules.electric.equipment_manage.entity.DTO.ElecUseDTO;
+import org.jeecg.modules.electric.equipment_manage.entity.DTO.ElecUsedetailDTO;
 import org.jeecg.modules.electric.equipment_manage.entity.ElecUsedetail;
+import org.jeecg.modules.electric.equipment_manage.mapper.ElecUsedetailMapper;
 import org.jeecg.modules.electric.equipment_manage.service.IElecUsedetailService;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -45,25 +48,29 @@ import com.alibaba.fastjson.JSON;
 public class ElecUsedetailController extends JeecgController<ElecUsedetail, IElecUsedetailService> {
 	@Autowired
 	private IElecUsedetailService elecUsedetailService;
-	
+	@Autowired
+	private ElecUsedetailMapper elecUsedetailMapper;
 	/**
 	 * 分页列表查询
 	 *
-	 * @param elecUsedetail
+	 * @param elecUsedetailDTO
 	 * @param pageNo
 	 * @param pageSize
 	 * @param req
 	 * @return
 	 */
 	@GetMapping(value = "/list")
-	public Result<?> queryPageList(ElecUsedetail elecUsedetail,
+	public Result<?> queryPageList(ElecUsedetailDTO elecUsedetailDTO,
 								   @RequestParam(name="pageNo", defaultValue="1") Integer pageNo,
 								   @RequestParam(name="pageSize", defaultValue="10") Integer pageSize,
 								   HttpServletRequest req) {
-		QueryWrapper<ElecUsedetail> queryWrapper = QueryGenerator.initQueryWrapper(elecUsedetail, req.getParameterMap());
-		Page<ElecUsedetail> page = new Page<ElecUsedetail>(pageNo, pageSize);
-		IPage<ElecUsedetail> pageList = elecUsedetailService.page(page, queryWrapper);
-		return Result.ok(pageList);
+		Result<Page<ElecUsedetailDTO>> result = new Result<Page<ElecUsedetailDTO>>();
+		Page<ElecUsedetailDTO> pageList = new Page<ElecUsedetailDTO>(pageNo,pageSize);
+		pageList = elecUsedetailService.list(pageList,elecUsedetailDTO.getEqid());
+		result.setSuccess(true);
+		result.setCode(200);
+		result.setResult(pageList);
+		return result;
 	}
 
 	@GetMapping(value = "/lookDetailByEqid")
@@ -79,6 +86,15 @@ public class ElecUsedetailController extends JeecgController<ElecUsedetail, IEle
 		return Result.ok(pageList);
 	}
 
+	 @GetMapping(value = "/lookDetail")
+	 public Result<?> lookDetail(@RequestParam(name="id",required=true)String id) {
+		log.info(id);
+		 ElecUsedetailDTO elecUsedetailDTO = elecUsedetailMapper.lookDetail(id);
+		 if(elecUsedetailDTO==null) {
+			 return Result.error("未找到对应数据");
+		 }
+		 return Result.ok(elecUsedetailDTO);
+	 }
 	
 	/**
 	 *   添加

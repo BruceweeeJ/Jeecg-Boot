@@ -16,4 +16,6 @@ import org.jeecg.modules.electric.equipment_manage.entity.DTO.ElecOveradjustDTO;
 public interface IElecOveradjustService extends IService<ElecOveradjust> {
     public Page<ElecOveradjustDTO> list(Page<ElecOveradjustDTO> page);
     public ElecOveradjustdetailDTO lookDetail(String ID);
+    public Page<ElecOveradjustdetailDTO> lookOverdetail(Page<ElecOveradjustdetailDTO>page,String eqid);
+    public Page<ElecOveradjustdetailDTO> lookAdjustdetail(Page<ElecOveradjustdetailDTO>page,String eqid);
 }

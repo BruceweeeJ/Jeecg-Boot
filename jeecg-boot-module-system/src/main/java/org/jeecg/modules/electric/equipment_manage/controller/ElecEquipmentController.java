@@ -15,10 +15,12 @@ import net.bytebuddy.matcher.ElementMatcher;
 import org.jeecg.common.api.vo.Result;
 import org.jeecg.common.system.query.QueryGenerator;
 import org.jeecg.common.util.oConvertUtils;
+import org.jeecg.modules.electric.equipment_manage.entity.ElecBattery;
 import org.jeecg.modules.electric.equipment_manage.entity.ElecEquipment;
 import org.jeecg.modules.electric.equipment_manage.entity.ElecOveradjust;
 import org.jeecg.modules.electric.equipment_manage.entity.ElecUse;
 import org.jeecg.modules.electric.equipment_manage.mapper.ElecEquipmentMapper;
+import org.jeecg.modules.electric.equipment_manage.service.IElecBatteryService;
 import org.jeecg.modules.electric.equipment_manage.service.IElecEquipmentService;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -57,6 +59,8 @@ public class ElecEquipmentController extends JeecgController<ElecEquipment, IEle
 	private IElecOveradjustService elecOveradjustService;
 	@Autowired
 	private IElecUseService elecUseService;
+	@Autowired
+	private IElecBatteryService elecBatteryService;
 	/**
 	 * 分页列表查询
 	 *
@@ -71,10 +75,21 @@ public class ElecEquipmentController extends JeecgController<ElecEquipment, IEle
 								   @RequestParam(name="pageNo", defaultValue="1") Integer pageNo,
 								   @RequestParam(name="pageSize", defaultValue="10") Integer pageSize,
 								   HttpServletRequest req) {
-		QueryWrapper<ElecEquipment> queryWrapper = QueryGenerator.initQueryWrapper(elecEquipment, req.getParameterMap());
-		Page<ElecEquipment> page = new Page<ElecEquipment>(pageNo, pageSize);
-		IPage<ElecEquipment> pageList = elecEquipmentService.page(page, queryWrapper);
-		return Result.ok(pageList);
+//		QueryWrapper<ElecEquipment> queryWrapper = QueryGenerator.initQueryWrapper(elecEquipment, req.getParameterMap());
+//		Page<ElecEquipment> page = new Page<ElecEquipment>(pageNo, pageSize);
+//		IPage<ElecEquipment> pageList = elecEquipmentService.page(page, queryWrapper);
+//		return Result.ok(pageList);
+		Result<Page<ElecEquipment>> result = new Result<Page<ElecEquipment>>();
+		Page<ElecEquipment> pageList = new Page<ElecEquipment>(pageNo,pageSize);
+		pageList = elecEquipmentService.list(pageList);
+//		log.info("查询当前页："+pageList.getCurrent());
+//		log.info("查询当前页数量："+pageList.getSize());
+//		log.info("查询结果数量："+pageList.getRecords().size());
+//		log.info("数据总数："+pageList.getTotal());
+		result.setSuccess(true);
+		result.setCode(200);
+		result.setResult(pageList);
+		return result;
 	}
 
 	/**
@@ -86,10 +101,20 @@ public class ElecEquipmentController extends JeecgController<ElecEquipment, IEle
 	 */
 	@PostMapping(value = "/add")
 	public Result<?> add(@RequestBody ElecEquipment elecEquipment) {
+		QueryWrapper<ElecEquipment>queryWrapper = new QueryWrapper<>();
+		queryWrapper.eq("eqcode",elecEquipment.getEqcode());
+		try {
+			if (elecEquipmentService.getOne(queryWrapper)!=null){
+				return Result.error("设备编号不唯一，请重新输入");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return Result.error("设备编号不唯一，请重新输入");
+		}
 		//设备ID为UUID32位编码
 		String ID = UUID.randomUUID().toString().replaceAll("-","");
+
 		elecEquipment.setId(ID);
-		elecEquipment.setEqname(ID);
 		elecEquipmentService.save(elecEquipment);
 		//检修表添加
 		ElecOveradjust elecOveradjust = new ElecOveradjust();
@@ -102,6 +127,20 @@ public class ElecEquipmentController extends JeecgController<ElecEquipment, IEle
 		elecUse.setEqcode(elecEquipment.getEqcode());
 		elecUse.setEqflag("可领用");
 		elecUseService.save(elecUse);
+		//电池表添加
+		try {
+			String batteryType = new String();
+			batteryType = elecEquipment.getEqbatype();
+			if (batteryType.equals("内置")){
+				ElecBattery elecBattery = new ElecBattery();
+				elecBattery.setId(ID);
+				elecBattery.setEqid(elecEquipment.getEqcode());
+				elecBatteryService.save(elecBattery);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return Result.ok("添加成功！");
+		}
 		return Result.ok("添加成功！");
 	}
 //	@PostMapping(value = "/add")
@@ -131,6 +170,9 @@ public class ElecEquipmentController extends JeecgController<ElecEquipment, IEle
 	@DeleteMapping(value = "/delete")
 	public Result<?> delete(@RequestParam(name="id",required=true) String id) {
 		elecEquipmentService.removeById(id);
+		elecOveradjustService.removeById(id);
+		elecUseService.removeById(id);
+		elecBatteryService.removeById(id);
 		return Result.ok("删除成功!");
 	}
 	
@@ -143,6 +185,9 @@ public class ElecEquipmentController extends JeecgController<ElecEquipment, IEle
 	@DeleteMapping(value = "/deleteBatch")
 	public Result<?> deleteBatch(@RequestParam(name="ids",required=true) String ids) {
 		this.elecEquipmentService.removeByIds(Arrays.asList(ids.split(",")));
+		this.elecOveradjustService.removeByIds(Arrays.asList(ids.split(",")));
+		this.elecUseService.removeByIds(Arrays.asList(ids.split(",")));
+		this.elecBatteryService.removeByIds(Arrays.asList(ids.split(",")));
 		return Result.ok("批量删除成功!");
 	}
 	
@@ -168,7 +213,7 @@ public class ElecEquipmentController extends JeecgController<ElecEquipment, IEle
 	  * @return
 	  */
 	 @GetMapping(value = "/showDetail")
-	 public Result<?> showDetail(@RequestParam(name="id",required=true) String id) {
+	 public Result<?> showDetail(String id) {
 		 ElecEquipment elecEquipment = elecEquipmentService.getById(id);
 		 if(elecEquipment==null) {
 			 return Result.error("未找到对应数据");

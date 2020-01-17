@@ -31,4 +31,15 @@ public class ElecOveradjustServiceImpl extends ServiceImpl<ElecOveradjustMapper,
     public ElecOveradjustdetailDTO lookDetail(String ID) {
         return elecOveradjustMapper.lookDetail(ID);
     }
+
+    @Override
+    public Page<ElecOveradjustdetailDTO> lookOverdetail(Page<ElecOveradjustdetailDTO> page,String eqid) {
+        return page.setRecords(elecOveradjustMapper.lookOverdetail(page,eqid));
+    }
+
+    @Override
+    public Page<ElecOveradjustdetailDTO> lookAdjustdetail(Page<ElecOveradjustdetailDTO> page, String eqid) {
+        return page.setRecords(elecOveradjustMapper.lookAdjustdetail(page,eqid));
+    }
+
 }

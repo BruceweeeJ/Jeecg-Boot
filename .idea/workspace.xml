@@ -2,35 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="381a040c-70f7-472b-8b93-cb2f843058e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_jdk8_1_2_0_CR1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_processor_1_2_0_CR1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecBatteryDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecOveradjustDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecOveradjustdetailDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecUseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/e/0e23650d1a6780214644080b7d9d7d7528e9c0b8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecAdjustdetailDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecOverdetailDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecUsedetailDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/jeecg-boot-module-system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/jeecg-boot-module-system.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecAdjustdetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecAdjustdetailController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecBatteryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecBatteryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecEquipmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecEquipmentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecOveradjustController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecOveradjustController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecOverdetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecOverdetailController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecUseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecUseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecUsedetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecUsedetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecBatteryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecBatteryDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecOveradjustDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecOveradjustDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecOveradjustdetailDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecOveradjustdetailDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecBattery.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecBattery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecEquipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecEquipment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecOveradjust.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecOveradjust.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecAdjustdetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecAdjustdetailMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecBatteryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecBatteryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecEquipmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecEquipmentMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecOveradjustMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecOveradjustMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecOverdetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecOverdetailMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecUseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecUseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecBatteryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecBatteryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecUsedetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecUsedetailMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecAdjustdetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecAdjustdetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecEquipmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecEquipmentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecOveradjustService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecOveradjustService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecUseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecUseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecBatteryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecBatteryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecOverdetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecOverdetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecUsedetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecUsedetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecAdjustdetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecAdjustdetailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecEquipmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecEquipmentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecOveradjustServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecOveradjustServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecUseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecUseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecOverdetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecOverdetailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecUsedetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecUsedetailServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/jeecg-boot-module-system/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/jeecg-boot-base-common/target/" />
+    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,69 +50,49 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecUseMapper.java">
+        <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecOverdetailController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+            <state relative-caret-position="124">
+              <caret line="110" column="5" selection-start-line="110" selection-start-column="5" selection-end-line="117" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecUseService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecUseServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <element signature="e#913#914#0" expanded="true" />
-                <element signature="e#983#984#0" expanded="true" />
-                <element signature="e#1071#1072#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecUseController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="88" column="6" lean-forward="true" selection-start-line="88" selection-start-column="6" selection-end-line="88" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecUsedetailController.java">
+        <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecUseController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
-              <folding>
-                <element signature="e#3167#3182#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="205">
+              <caret line="150" column="35" lean-forward="true" selection-start-line="150" selection-start-column="35" selection-end-line="150" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecOveradjustController.java">
+        <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecUsedetailDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="182" column="51" lean-forward="true" selection-start-line="182" selection-start-column="51" selection-end-line="182" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="162">
+              <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecUsedetailMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecOverdetailMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -110,8 +100,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecOveradjustMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="25" column="140" selection-start-line="25" selection-start-column="110" selection-end-line="25" selection-end-column="140" />
+            <state relative-caret-position="294">
+              <caret line="28" column="84" selection-start-line="28" selection-start-column="84" selection-end-line="28" selection-end-column="110" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecAdjustdetailMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecBatteryMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="18" column="104" selection-start-line="18" selection-start-column="104" selection-end-line="18" selection-end-column="104" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecUsedetailController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="90" column="19" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecUseMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="31" column="59" lean-forward="true" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,6 +166,20 @@
       <find>TableId</find>
       <find>p</find>
       <find>eqoverconditionlast</find>
+      <find>show</find>
+      <find>queryw</find>
+      <find>周期</find>
+      <find>eqf</find>
+      <find>last</find>
+      <find>look</find>
+      <find>over</find>
+      <find>log</find>
+      <find>log.info</find>
+      <find>add</find>
+      <find>save</find>
+      <find>mapper</find>
+      <find>getElecusedetail</find>
+      <find>lookdetail</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -145,45 +188,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/resources/jeecg/jeecg_database.properties" />
-        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/test/java/org/jeecg/JeecgDemoController.java" />
-        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/controller/JeecgDemoController.java" />
-        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/controller/JeecgController.java" />
-        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/mapper/SysUserMapper.java" />
-        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/entity/SysLog.java" />
         <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/JeecgApplication.java" />
         <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipmentManage/mapper/ElecEquipmentMapper.java" />
         <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipmentManage/service/impl/ElecEquipmentServiceImpl.java" />
         <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/resources/jeecg/jeecg_config.properties" />
         <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipmentManage/controller/ElecEquipmentController.java" />
-        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecEquipment.java" />
-        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecEquipmentMapper.java" />
         <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/config/ShiroConfig.java" />
-        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecEquipmentController.java" />
         <option value="$PROJECT_DIR$/jeecg-boot-module-system/pom.xml" />
         <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecOveradjustDTO.java" />
         <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/xml/ElecOveradjustMapper.xml" />
-        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecOveradjustDTO.java" />
         <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecBatteryService.java" />
         <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecBatteryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecBatteryController.java" />
-        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecBatteryDTO.java" />
-        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecBatteryMapper.java" />
         <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/AddOverDTO.java" />
         <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecOverDTO.java" />
-        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecOverdetailDTO.java" />
-        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecOveradjustService.java" />
-        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecOveradjustServiceImpl.java" />
-        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecOveradjustdetailDTO.java" />
-        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecOveradjustMapper.java" />
         <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecUseDTO.java" />
         <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecUseService.java" />
         <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecUseServiceImpl.java" />
-        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecUseMapper.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecEquipment.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecOverdetail.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecAdjustdetail.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecAdjustdetailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecAdjustdetailService.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecOverdetailDTO.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecAdjustdetailDTO.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecEquipmentService.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecEquipmentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecEquipmentController.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecEquipmentMapper.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecOveradjust.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecOveradjustDTO.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecOverdetailService.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecOverdetailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecOveradjustMapper.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecOveradjustService.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecOveradjustServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecOveradjustdetailDTO.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecOverdetailMapper.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecAdjustdetailMapper.java" />
         <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecOveradjustController.java" />
-        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecUseController.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecAdjustdetailController.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecBatteryDTO.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecBattery.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecBatteryController.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecBatteryMapper.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecUsedetailService.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecUsedetailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecOverdetailController.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecUsedetailMapper.java" />
         <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecUsedetailController.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecUsedetailDTO.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecUseMapper.java" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecUseController.java" />
       </list>
     </option>
   </component>
@@ -468,7 +523,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578469140978" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579223279891" />
     <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.1.2/mybatis-plus-core-3.1.2.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -495,7 +550,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="HTTP Request.JeecgApplication#4">
+    <configuration name="JeecgApplication#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/JeecgApplication.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="JeecgApplication#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/JeecgApplication.http" index="2">
+      <method v="2" />
+    </configuration>
+    <configuration name="JeecgApplication#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/JeecgApplication.http" index="3">
+      <method v="2" />
+    </configuration>
+    <configuration name="JeecgApplication#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/JeecgApplication.http" index="4">
+      <method v="2" />
+    </configuration>
     <configuration name="JeecgApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="jeecg-boot-module-system" />
       <extension name="coverage">
@@ -512,6 +579,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.JeecgApplication" />
+        <item itemvalue="HTTP Request.JeecgApplication#4" />
+        <item itemvalue="HTTP Request.JeecgApplication#3" />
+        <item itemvalue="HTTP Request.JeecgApplication#2" />
+        <item itemvalue="HTTP Request.JeecgApplication#1" />
       </list>
     </recent_temporary>
   </component>
@@ -528,7 +599,7 @@
       <workItem from="1577348515571" duration="9629000" />
       <workItem from="1577508853210" duration="27997000" />
       <workItem from="1577961113340" duration="1182000" />
-      <workItem from="1578366243630" duration="29081000" />
+      <workItem from="1578366243630" duration="91322000" />
     </task>
     <task id="LOCAL-00001" summary="init2">
       <created>1577357838189</created>
@@ -565,17 +636,24 @@
       <option name="project" value="LOCAL" />
       <updated>1578447773496</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="武德提交的第一版接口需求">
+      <created>1578469237597</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1578469237597</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67889000" />
+    <option name="totallyTimeSpent" value="130130000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30063966" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33582088" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -586,15 +664,15 @@
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="SonarLint" order="4" />
-      <window_info anchor="bottom" id="Java Enterprise" order="5" />
-      <window_info anchor="bottom" id="Database Changes" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50053304" side_tool="true" weight="0.31960997" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.32936078" />
+      <window_info anchor="bottom" id="SonarLint" order="5" />
+      <window_info anchor="bottom" id="Java Enterprise" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Message" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.32936078" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.5471289" />
-      <window_info anchor="bottom" id="Run" order="11" visible="true" weight="0.41386783" />
+      <window_info active="true" anchor="bottom" id="Run" order="11" sideWeight="0.49946696" visible="true" weight="0.45503792" />
       <window_info anchor="bottom" id="Debug" order="12" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
@@ -659,7 +737,8 @@
     <MESSAGE value="1" />
     <MESSAGE value="设备管理的界面初始建立" />
     <MESSAGE value="showdetail" />
-    <option name="LAST_COMMIT_MESSAGE" value="showdetail" />
+    <MESSAGE value="武德提交的第一版接口需求" />
+    <option name="LAST_COMMIT_MESSAGE" value="武德提交的第一版接口需求" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -669,12 +748,6 @@
           <line>14</line>
           <properties />
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecAdjustdetailController.java</url>
-          <line>64</line>
-          <properties />
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecOveradjustService.java</url>
@@ -692,248 +765,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecOveradjustDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecAdjustdetailMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecEquipmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="745">
-          <caret line="170" column="74" selection-start-line="170" selection-start-column="74" selection-end-line="170" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/mapper/SysUserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-759">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecAdjustdetailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="63" column="24" lean-forward="true" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.1.2/mybatis-plus-extension-3.1.2.jar!/com/baomidou/mybatisplus/extension/plugins/pagination/Page.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.1.2/mybatis-plus-extension-3.1.2.jar!/com/baomidou/mybatisplus/extension/service/IService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="98" selection-start-line="98" selection-end-line="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/xml/ElecOverdetailMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/xml/ElecAdjustdetailMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/service/impl/SysUserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="240" column="29" selection-start-line="240" selection-start-column="29" selection-end-line="240" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.1.2/mybatis-plus-core-3.1.2-sources.jar!/com/baomidou/mybatisplus/core/metadata/IPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.1.2/mybatis-plus-extension-3.1.2.jar!/com/baomidou/mybatisplus/extension/service/impl/ServiceImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="279" column="36" selection-start-line="279" selection-start-column="36" selection-end-line="279" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.1.2/mybatis-plus-core-3.1.2-sources.jar!/com/baomidou/mybatisplus/core/mapper/BaseMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="197" column="80" selection-start-line="197" selection-start-column="80" selection-end-line="197" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/xml/ElecBatterychargeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/mapper/SysUserRoleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/mapper/SysLogMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/service/ISysAnnouncementSendService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="25" column="142" selection-start-line="25" selection-start-column="142" selection-end-line="25" selection-end-column="142" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/service/impl/SysAnnouncementSendServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/service/impl/SysAnnouncementServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="117" column="85" selection-start-line="117" selection-start-column="81" selection-end-line="117" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/xml/ElecBatteryMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/xml/ElecOveradjustMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecBattery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecBatteryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecBatteryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecBatteryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
-          <folding>
-            <element signature="e#2711#2733#0" expanded="true" />
-            <element signature="e#2779#2795#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecOveradjustDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecBatteryDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecBatteryMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecAdjustdetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecEquipment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1217">
-          <caret line="31" column="4" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecOverdetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/mapper/SysAnnouncementSendMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/mapper/SysPermissionDataRuleMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecOveradjust.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -958,16 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecOveradjustService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/mapper/SysRoleMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -975,82 +800,360 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecBatteryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecBatterychargeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecBatteryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="25" column="71" lean-forward="true" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecEquipment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="93" column="37" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecAdjustdetailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecAdjustdetailServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecBatterychargeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecBatterychargeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecOveradjust.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+          <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+          <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+          <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
+          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecEquipmentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecEquipmentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecEquipmentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecOverdetailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecOverdetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecOverdetailServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecAdjustdetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="39" column="46" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecOveradjustDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecOveradjustServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        <state relative-caret-position="215">
+          <caret line="41" column="55" lean-forward="true" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1249#1250#0" expanded="true" />
-            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#1307#1308#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecAdjustdetailDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecOveradjustdetailDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        <state relative-caret-position="197">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecUse.java">
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-base-common/src/main/java/org/jeecg/common/system/base/controller/JeecgController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="17" />
+        <state relative-caret-position="102">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecUseDTO.java">
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecBatteryDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecAdjustdetailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="198" column="41" lean-forward="true" selection-start-line="198" selection-start-column="41" selection-end-line="198" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecBatteryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="112" column="49" selection-start-line="112" selection-start-column="38" selection-end-line="112" selection-end-column="49" />
+          <folding>
+            <element signature="e#2714#2736#0" expanded="true" />
+            <element signature="e#2782#2798#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecOverdetailDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="45" lean-forward="true" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecOveradjustService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecUseService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecOveradjustMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="25" column="140" selection-start-line="25" selection-start-column="110" selection-end-line="25" selection-end-column="140" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="176">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecUseServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="192">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="27" />
           <folding>
             <element signature="e#913#914#0" expanded="true" />
             <element signature="e#983#984#0" expanded="true" />
-            <element signature="e#1071#1072#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1095#1096#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecUseMapper.java">
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/IElecUsedetailService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        <state relative-caret-position="176">
+          <caret line="14" column="78" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecOveradjustController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="158" selection-start-line="158" selection-end-line="158" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3373#3398#0" expanded="true" />
+            <element signature="e#3447#3466#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecEquipmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-291">
+          <caret line="101" column="30" selection-start-line="101" selection-start-column="27" selection-end-line="101" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3440#3461#0" expanded="true" />
+            <element signature="e#3506#3521#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecBattery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecUseDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecUse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="55" column="36" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/ElecUsedetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="48" column="40" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/service/impl/ElecUsedetailServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="24" column="77" selection-start-line="24" selection-start-column="77" selection-end-line="24" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecOverdetailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="110" column="5" selection-start-line="110" selection-start-column="5" selection-end-line="117" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecOveradjustController.java">
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecUsedetailController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="182" column="51" lean-forward="true" selection-start-line="182" selection-start-column="51" selection-end-line="182" selection-end-column="51" />
+        <state relative-caret-position="320">
+          <caret line="90" column="19" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecOverdetailMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecOveradjustMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="28" column="84" selection-start-line="28" selection-start-column="84" selection-end-line="28" selection-end-column="110" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecAdjustdetailMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecBatteryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="18" column="104" selection-start-line="18" selection-start-column="104" selection-end-line="18" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecUsedetailMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/entity/DTO/ElecUsedetailDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/mapper/ElecUseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="31" column="59" lean-forward="true" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1059,18 +1162,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecUseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="88" column="6" lean-forward="true" selection-start-line="88" selection-start-column="6" selection-end-line="88" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/electric/equipment_manage/controller/ElecUsedetailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="e#3167#3182#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="205">
+          <caret line="150" column="35" lean-forward="true" selection-start-line="150" selection-start-column="35" selection-end-line="150" selection-end-column="35" />
         </state>
       </provider>
     </entry>

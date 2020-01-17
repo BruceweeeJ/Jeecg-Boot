@@ -34,33 +34,15 @@ public class ElecEquipment implements Serializable {
 	@Excel(name = "设备名称", width = 15)
     private java.lang.String eqname;
 	/**规格型号*/
-	@Excel(name = "规格型号", width = 15)
+	@Excel(name = "设备型号", width = 15)
     private java.lang.String eqmodel;
-	/**产地*/
-	@Excel(name = "产地", width = 15)
-    private java.lang.String eqarea;
-	/**厂家*/
-	@Excel(name = "厂家", width = 15)
-    private java.lang.String eqvender;
-	/**品牌*/
-	@Excel(name = "品牌", width = 15)
-    private java.lang.String eqbrand;
-	/**用途*/
-	@Excel(name = "用途", width = 15)
-    private java.lang.String equse;
-	/**输出形式*/
-	@Excel(name = "输出形式", width = 15)
-    private java.lang.String equsetype;
 	/**出厂日期*/
 	@Excel(name = "出厂日期", width = 15, format = "yyyy-MM-dd")
 	@JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd")
     @DateTimeFormat(pattern="yyyy-MM-dd")
     private java.util.Date eqdate;
-	/**使用年限*/
-	@Excel(name = "使用年限", width = 15)
-    private java.lang.Integer eqlimitdate;
 	/**保修时间*/
-	@Excel(name = "保修时间", width = 15)
+	@Excel(name = "保修年限", width = 15)
     private java.lang.Integer eqwarrantydate;
 	/**使用温度（下限）*/
 	@Excel(name = "使用温度（下限）", width = 15)
@@ -89,18 +71,24 @@ public class ElecEquipment implements Serializable {
 	/**存储湿度（上限）*/
 	@Excel(name = "存储湿度（上限）", width = 15)
     private java.lang.Integer eqstorewethigh;
-	/**售后地点*/
-	@Excel(name = "售后地点", width = 15)
-    private java.lang.String eqaftersale;
-	/**售后联系方式*/
-	@Excel(name = "售后联系方式", width = 15)
-    private java.lang.String eqaftersaletel;
 	/**检修周期*/
 	@Excel(name = "检修周期", width = 15)
     private java.lang.String eqoverhaul;
-	/**设备类型*/
-	@Excel(name = "设备类型", width = 15)
-    private java.lang.String eqtype;
+	/**电池类型*/
+	@Excel(name = "电池类型", width = 15)
+    private java.lang.String eqbatype;
+	/*制造厂家*/
+	@Excel(name = "制造厂家", width = 15)
+	private java.lang.String eqmaker;
+	/**制造厂家联系方式*/
+	@Excel(name = "制造厂家联系方式", width = 15)
+	private java.lang.String eqmakercon;
+	/**销售厂家*/
+	@Excel(name = "销售厂家", width = 15)
+	private java.lang.String eqsaler;
+	/**销售厂家联系方式*/
+	@Excel(name = "销售厂家联系方式", width = 15)
+	private java.lang.String eqsalercon;
 	/**校准周期*/
 	@Excel(name = "校准周期", width = 15)
     private java.lang.String eqadjust;

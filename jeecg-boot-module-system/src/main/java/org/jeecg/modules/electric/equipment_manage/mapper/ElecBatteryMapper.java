@@ -16,8 +16,10 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @Version: V1.0
  */
 public interface ElecBatteryMapper extends BaseMapper<ElecBattery> {
-    @Select("SELECT ELEC_BATTERY.ID,ELEC_BATTERY.EQBATCODE,ELEC_BATTERY.EQBATNAME,ELEC_BATTERY.EQBATMODEL,\n" +
-            "ELEC_EQUIPMENT.EQNAME,ELEC_BATTERY.EQCHARGEDATE,ELEC_BATTERY.EQCHARGESTATE,ELEC_BATTERY.EQBATUESSTATE\n" +
-            "FROM ELEC_BATTERY LEFT join ELEC_EQUIPMENT on ELEC_BATTERY.EQID = ELEC_EQUIPMENT.ID")
+    @Select("SELECT * FROM ELEC_BATTERY LEFT join ELEC_EQUIPMENT on ELEC_BATTERY.ID = ELEC_EQUIPMENT.ID order by ELEC_BATTERY.CREATE_TIME")
     List<ElecBatteryDTO> getBatteryList(Page<ElecBatteryDTO>page);
+
+    @Select("SELECT * FROM ELEC_BATTERY LEFT join ELEC_EQUIPMENT on ELEC_BATTERY.ID = ELEC_EQUIPMENT.ID " +
+            "left join ELEC_USE on ELEC_BATTERY.ID = ELEC_USE.ID where ELEC_BATTERY.ID=#{id}")
+    ElecBatteryDTO lookDetail(@Param("id") String id);
 }

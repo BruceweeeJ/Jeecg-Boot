@@ -78,10 +78,6 @@ public class ElecOveradjustController extends JeecgController<ElecOveradjust, IE
 		Result<Page<ElecOveradjustDTO>> result = new Result<Page<ElecOveradjustDTO>>();
 		Page<ElecOveradjustDTO> pageList = new Page<ElecOveradjustDTO>(pageNo,pageSize);
 		pageList = elecOveradjustService.list(pageList);
-		log.info("查询当前页："+pageList.getCurrent());
-		log.info("查询当前页数量："+pageList.getSize());
-		log.info("查询结果数量："+pageList.getRecords().size());
-		log.info("数据总数："+pageList.getTotal());
 		result.setSuccess(true);
 		result.setCode(200);
 		result.setResult(pageList);
@@ -154,10 +150,6 @@ public class ElecOveradjustController extends JeecgController<ElecOveradjust, IE
 
 	@GetMapping(value = "/editOver")
 	public Result<?> editOver(@RequestParam(name="id",required=true)String id) {
-//		id = "dad095e6562a470da1fee61115e37734";
-//		QueryWrapper<ElecEquipment>queryWrapper = new QueryWrapper<>();
-//		queryWrapper.select("eqcode","eqname","eqmodel").eq("id",id);
-//		log.info(String.valueOf(elecEquipmentService.getOne(queryWrapper)));
 		ElecEquipment elecEquipment = elecEquipmentService.getById(id);
 		if(elecEquipment==null) {
 			return Result.error("未找到对应数据");
@@ -182,7 +174,6 @@ public class ElecOveradjustController extends JeecgController<ElecOveradjust, IE
 		 }
 		 return Result.ok(elecOveradjustdetailDTO);
 	 }
-
 
     /**
     * 导出excel

@@ -34,30 +34,30 @@ public class ElecOveradjust implements Serializable {
 	@Excel(name = "检修日期", width = 15, format = "yyyy-MM-dd")
 	@JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd")
     @DateTimeFormat(pattern="yyyy-MM-dd")
-    private java.util.Date eqoverdatelast;
+    private java.util.Date eqoverdate;
 	/**检修状态*/
 	@Excel(name = "检修状态", width = 15)
     private java.lang.String eqoverstate;
 	/**检修情况*/
 	@Excel(name = "检修情况", width = 15)
-    private java.lang.String eqoverconditionlast;
+    private java.lang.String eqovercondition;
 	/**检修单位*/
 	@Excel(name = "检修单位", width = 15)
-    private java.lang.String eqoverunitlast;
+    private java.lang.String eqoverunit;
 	/**校准日期*/
 	@Excel(name = "校准日期", width = 15, format = "yyyy-MM-dd")
 	@JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd")
     @DateTimeFormat(pattern="yyyy-MM-dd")
-    private java.util.Date eqadjustdatelast;
+    private java.util.Date eqadjustdate;
 	/**校准状态*/
 	@Excel(name = "校准状态", width = 15)
     private java.lang.String eqadjuststate;
 	/**校准情况*/
 	@Excel(name = "校准情况", width = 15)
-    private java.lang.String eqadjustconditionlast;
+    private java.lang.String eqadjustcondition;
 	/**校准单位*/
 	@Excel(name = "校准单位", width = 15)
-    private java.lang.String eqadjustunitlast;
+    private java.lang.String eqadjustunit;
 	/**备注*/
 	@Excel(name = "备注", width = 15)
     private java.lang.String eqtext;

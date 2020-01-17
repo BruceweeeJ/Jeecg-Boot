@@ -14,6 +14,8 @@ import org.jeecg.common.system.query.QueryGenerator;
 import org.jeecg.common.util.oConvertUtils;
 import org.jeecg.modules.electric.equipment_manage.entity.DTO.ElecBatteryDTO;
 import org.jeecg.modules.electric.equipment_manage.entity.ElecBattery;
+import org.jeecg.modules.electric.equipment_manage.entity.ElecUse;
+import org.jeecg.modules.electric.equipment_manage.mapper.ElecBatteryMapper;
 import org.jeecg.modules.electric.equipment_manage.service.IElecBatteryService;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -21,6 +23,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import lombok.extern.slf4j.Slf4j;
 
+import org.jeecg.modules.electric.equipment_manage.service.IElecUseService;
 import org.jeecgframework.poi.excel.ExcelImportUtil;
 import org.jeecgframework.poi.excel.def.NormalExcelConstants;
 import org.jeecgframework.poi.excel.entity.ExportParams;
@@ -46,11 +49,15 @@ import com.alibaba.fastjson.JSON;
 public class ElecBatteryController extends JeecgController<ElecBattery, IElecBatteryService> {
 	@Autowired
 	private IElecBatteryService elecBatteryService;
+	@Autowired
+	private ElecBatteryMapper elecBatteryMapper;
+	@Autowired
+	private IElecUseService elecUseService;
 	
 	/**
 	 * 分页列表查询
 	 *
-	 * @param elecBattery
+	 * @param elecBatteryDTO
 	 * @param pageNo
 	 * @param pageSize
 	 * @param req
@@ -61,24 +68,26 @@ public class ElecBatteryController extends JeecgController<ElecBattery, IElecBat
 								   @RequestParam(name="pageNo", defaultValue="1") Integer pageNo,
 								   @RequestParam(name="pageSize", defaultValue="10") Integer pageSize,
 								   HttpServletRequest req) {
-//		QueryWrapper<ElecBattery> queryWrapper = QueryGenerator.initQueryWrapper(elecBattery, req.getParameterMap());
-//		Page<ElecBattery> page = new Page<ElecBattery>(pageNo, pageSize);
-//		IPage<ElecBattery> pageList = elecBatteryService.page(page, queryWrapper);
-//		return Result.ok(pageList);
 		Result<Page<ElecBatteryDTO>> result = new Result<Page<ElecBatteryDTO>>();
 		Page<ElecBatteryDTO> pageList = new Page<ElecBatteryDTO>(pageNo,pageSize);
 		pageList = elecBatteryService.list(pageList);
-		log.info("查询当前页："+pageList.getCurrent());
-		log.info("查询当前页数量："+pageList.getSize());
-		log.info("查询结果数量："+pageList.getRecords().size());
-		log.info("数据总数："+pageList.getTotal());
 		result.setSuccess(true);
 		result.setCode(200);
 		result.setResult(pageList);
 		return result;
 	}
-	
-	/**
+
+
+	 @GetMapping(value = "/lookDetail")
+	 public Result<?> lookDetail(@RequestParam(name="id",required=true)String id) {
+		 ElecBatteryDTO elecBatteryDTO = elecBatteryMapper.lookDetail(id);
+		 if(elecBatteryDTO==null) {
+			 return Result.error("未找到对应数据");
+		 }
+		 return Result.ok(elecBatteryDTO);
+	 }
+
+	 /**
 	 *   添加
 	 *
 	 * @param elecBattery
@@ -98,6 +107,9 @@ public class ElecBatteryController extends JeecgController<ElecBattery, IElecBat
 	 */
 	@PutMapping(value = "/edit")
 	public Result<?> edit(@RequestBody ElecBattery elecBattery) {
+		ElecUse elecUse = elecUseService.getById(elecBattery.getId());
+		elecUse.setEqusedate(elecBattery.getEqusedate());
+		elecUseService.updateById(elecUse);
 		elecBatteryService.updateById(elecBattery);
 		return Result.ok("编辑成功!");
 	}
